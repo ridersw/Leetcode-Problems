@@ -1,25 +1,38 @@
 def closestCost(baseCosts, toppingCosts, target, finalCost = None):
-	#print(f"toppingCosts: {toppingCosts}")
+	print(f"toppingCosts: {toppingCosts}")
+	
+	
+	
 	
 	#update toppingCosts list with all of its combinations
 	length = len(toppingCosts)
+	
+	for swi in range(length):
+		toppingCosts.append(toppingCosts[swi] * 2)
+	
 	swj = 0
 	while swj < length:
 		tempSum = 0
 		for swi in range(length):
+			print(f"for Element: {toppingCosts[swi]}")
+			print(f"toppingCosts[swi]: {toppingCosts[swi]} & toppingCosts[swj]: {toppingCosts[swj]}")
 			if swi == swj:
 				tempSum += (toppingCosts[swi] * 2)
 				toppingCosts.append(tempSum)
 			else:
 				tempSum += (toppingCosts[swi])
 				toppingCosts.append(tempSum)
+				
+			print(f"toppingCosts: {toppingCosts}")
 		#toppingCosts.append(tempSum)		
 		swj += 1
 			
-	#print(f"Updated toppingCosts: {toppingCosts}")
+	print(f"Updated toppingCosts: {toppingCosts}")
 	#print(f" baseCosts: {baseCosts}")
 	
 	#Update the costs with baseCosts
+	
+	
 	
 	lengthOfToppings = len(toppingCosts)
 	
@@ -31,18 +44,28 @@ def closestCost(baseCosts, toppingCosts, target, finalCost = None):
 	#print(f"Added BaseCosts toppingCosts: {toppingCosts}")
 	toppingCosts += baseCosts
 	toppingCosts.sort()
-	toppingCosts.append(target+1)
+	#toppingCosts.append(target+1)
+	print(f"Added BaseCosts toppingCosts: {toppingCosts}")
+	
+	toppingCosts = list(set(toppingCosts))
+	
 	
 	for swi in range(1,len(toppingCosts)):
 		if toppingCosts[swi] > target:
-			return toppingCosts[swi-1]
+			#print(f"toppingCosts[swi]: {toppingCosts[swi]} and toppingCosts[swi-1]: {toppingCosts[swi-1]}")
+			if abs(target - toppingCosts[swi]) < abs(target - toppingCosts[swi-1]):
+				#print(f"abs(target - toppingCosts[swi]): {abs(target - toppingCosts[swi])}")
+				#print(f"abs(target - toppingCosts[swi]): {abs(target - toppingCosts[swi])}")
+				return toppingCosts[swi]
+			else:
+				return toppingCosts[swi - 1]
 			
 	return toppingCosts[swi]
 	
 if __name__ == "__main__":
-	baseCosts = [1,7]
-	toppingCosts = [3,4]
-	target = 10
+	#baseCosts = [1,7]
+	#toppingCosts = [3,4]
+	#target = 10
 	
 	#baseCosts = [2,3]
 	#toppingCosts = [4,5,100]
@@ -56,9 +79,13 @@ if __name__ == "__main__":
 	#toppingCosts = [1]
 	#target = 1
 	
-	baseCosts = [4]
-	toppingCosts = [9]
-	target = 9
+	#baseCosts = [4]
+	#toppingCosts = [9]
+	#target = 9
+	
+	baseCosts = [5,9]
+	toppingCosts = [10,1]
+	target = 7
 	
 	print(closestCost(baseCosts, toppingCosts, target))
 
