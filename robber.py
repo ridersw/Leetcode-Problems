@@ -1,5 +1,8 @@
 class Solution:
     def robber(self, houses):
+        if len(houses) < 3:
+            return max(houses)
+
         dp = [0] * len(houses)
 
         dp[0] = houses[0]
