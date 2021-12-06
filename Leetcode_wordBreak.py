@@ -51,3 +51,5 @@ if __name__ == "__main__":
 
 # Input: s = "catsandog", wordDict = ["cats","dog","sand","and","cat"]
 # Output: false
+
+#done
