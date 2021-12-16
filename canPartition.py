@@ -28,6 +28,7 @@ class Solution:
 
         return canSum(nums, half)
 
+    #can sum problem
     def canPartitionNumbers(self, nums):
         if sum(nums)/2 != int(sum(nums)/2):
             return False
