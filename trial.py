@@ -1,27 +1,23 @@
-def duplicateNumber(arr):
-    dupli = None
-    sum = 0
+def trial(matrix):
+    side = 1
+    area = 1
+    swi = 0
+    swj = 0
+    flag = True
+    while flag and (swi+side) <= len(matrix) and (swj+side) <= len(matrix[0]):
+        print(f'For side: {side} and area: {area}')
+        for sswi in range(swi, swi+side):
+            for sswj in range(swj, swj+side):
+                if matrix[sswi][sswj] == "0":
+                    flag = False
+                    break
+        if flag:
+            area = (side)**2
+            side += 1
+        else:
+            break
 
-    arr.sort()
+    return area
 
-    for swi in range(len(arr)-1):
-        if arr[swi] == arr[swi+1] and not dupli:
-            dupli = arr[swi]
-            sum -= arr[swi]
-        sum += arr[swi]
-
-    sum += arr[-1]
-    print(f'duplicate: {dupli}')
-    print(f'Sum: {sum}')
-
-    for swi in range(1,len(arr)+1):
-        sum -= swi
-
-    return (dupli + abs(sum))
-    
-
-
-
-arr = [4,3,3,1]
-arr = [2,2]
-print(duplicateNumber(arr))
+matrix = [['1','1','0'],['1','1','1'],['1','1','1'],['1','1','1']]
+print(trial(matrix))
