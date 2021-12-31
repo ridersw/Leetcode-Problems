@@ -25,10 +25,6 @@ if __name__ == "__main__":
 # For example, The integer 5 is "101" in binary and its complement is "010" which is the integer 2.
 # Given an integer num, return its complement.
 
- 
-
-
-
 # Example 1:
 
 # Input: num = 5
