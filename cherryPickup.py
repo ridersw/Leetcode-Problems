@@ -75,6 +75,7 @@ class Solution:
 
             print(f'robot2: {robot1} and its location {swi2} and {swj2} len(grid): {len(grid)} and len(grid[0]): {len(grid[0])}' )
 
+
             #when robot is in leftmost cornor
             if swj1 == 0:
                 # print('when robot is in leftmost cornor')
