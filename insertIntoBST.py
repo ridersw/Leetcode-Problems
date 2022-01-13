@@ -21,7 +21,6 @@ class Solution:
                 root.left = TreeNode(val)
         
         
-        
         #right
         if root.val < val:
             if root.right:
