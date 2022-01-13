@@ -20,7 +20,6 @@ class Solution:
             else:
                 root.left = TreeNode(val)
         
-        
         #right
         if root.val < val:
             if root.right:
