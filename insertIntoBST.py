@@ -19,9 +19,6 @@ class Solution:
                 self.insertIntoBST(root.left, val)
             else:
                 root.left = TreeNode(val)
-
-
-
         
         #right
         if root.val < val:
