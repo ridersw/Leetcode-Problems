@@ -21,6 +21,8 @@ if __name__ == "__main__":
 	s = "a"
 	t = "aa"
 	print(findTheDifference(s,t))
+
+	
 	
 #You are given two strings s and t.
 
