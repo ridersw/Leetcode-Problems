@@ -23,8 +23,6 @@ if __name__ == "__main__":
 	print(findTheDifference(s,t))
 
 
-
-
 	
 #You are given two strings s and t.
 
