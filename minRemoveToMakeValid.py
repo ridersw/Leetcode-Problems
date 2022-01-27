@@ -3,43 +3,6 @@ import enum
 
 class Solution:
     def minRemoveToMakeValid(self, s):
-        
-        # res = ""
-        # openBraceCount = 0
-        # openBracePos = []
-        # closeBracePos = []
-
-        # for swi in range(len(s)):
-        #     if s[swi] == "(":
-        #         openBraceCount += 1
-        #         openBracePos.append(swi)
-        #     elif s[swi] == ")" and openBraceCount > 0:
-        #         closeBracePos.append(swi)
-        #         openBraceCount -= 1
-        #     else:
-        #         res += s[swi]
-
-        # print(f'openBraceCount: {openBraceCount}')
-        # print(f'openBracePos: {openBracePos}')
-        # print(f'closeBracePos: {closeBracePos}')
-
-        # s = list(s)
-
-        # stack = []
-
-        # for i, char in enumerate(s):
-        #     print(f'stack: {stack}')
-        #     if char == '(':
-        #         stack.append(i)
-        #     elif char == ')':
-        #         if stack:
-        #             stack.pop()
-        #         else:
-        #             s[i] = ''
-        # # while stack:
-        # #     s[stack.pop()] = ''
-
-        # return "".join(s)
 
         s = list(s)
 
