@@ -11,9 +11,6 @@ class Solution:
                 temp = int(temp)
                 arr.append(temp)
 
-        # for swi in range(len(arr)):
-        #     arr[swi] = int(arr[swi])
-
         arr.sort()
         return arr[-1]
 

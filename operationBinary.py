@@ -26,6 +26,13 @@ class Solution:
 
         return S.count('0') + (S.count('1')- 1) * 2 + 1
 
+        #101 -> 1
+        #010 -> 2
+        #001 -> 1
+
+
+        #
+
 
 if __name__ == "__main__":
     obj = Solution()
