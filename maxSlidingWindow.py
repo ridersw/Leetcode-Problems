@@ -16,8 +16,6 @@ if __name__ == "__main__":
 
 # Return the max sliding window.
 
- 
-
 # Example 1:
 
 # Input: nums = [1,3,-1,-3,5,3,6,7], k = 3
