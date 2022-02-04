@@ -21,3 +21,4 @@ if __name__ == "__main__":
     obj = Solution()
 
     print(obj.isPrime(12))
+    print(obj.isPrime(11))
