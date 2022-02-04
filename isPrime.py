@@ -22,3 +22,4 @@ if __name__ == "__main__":
 
     print(obj.isPrime(12))
     print(obj.isPrime(11))
+    print(obj.isPrime(17))
