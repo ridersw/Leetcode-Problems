@@ -23,3 +23,5 @@ if __name__ == "__main__":
     print(obj.isPrime(12))
     print(obj.isPrime(11))
     print(obj.isPrime(17))
+
+    print(obj.isPrime(1000000000000000000000098989733647267447863274678263486326478326486238467283648))
