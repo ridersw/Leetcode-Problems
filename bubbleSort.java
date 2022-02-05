@@ -37,4 +37,4 @@ public class bubbleSort {
     }
 }
 
-// Simple Bubble Sort Problem in Java
+// Simple Bubble Sort Problem in Java- Without any optimization
