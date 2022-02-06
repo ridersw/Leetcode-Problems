@@ -12,14 +12,7 @@ public class bubbleSort {
                     array[swj+1] = temp;
                 }
             }
-            System.out.println("");
-            for(int swk=0;swk<array.length;swk++){
-                System.out.print(array[swk] + " ");
-            }
-
         }
-
-
         return array;
     }
 
@@ -33,7 +26,6 @@ public class bubbleSort {
     for(int swi=0;swi<array.length;swi++){
         System.out.print(array[swi] + " ");
     }
-
     }
 }
 
