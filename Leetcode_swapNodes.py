@@ -38,6 +38,8 @@ class Solution:
         pointer1.val, pointer2.val = pointer2.val, pointer1.val
         
         return head
+
+        
                 
         
         
