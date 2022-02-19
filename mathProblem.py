@@ -17,4 +17,3 @@ if __name__ == "__main__":
 
 # World's Toughest Problem also known as Collatz conjecture
 # link - https://www.quantamagazine.org/why-mathematicians-still-cant-solve-the-collatz-conjecture-20200922/
-
