@@ -16,6 +16,7 @@ if __name__ == "__main__":
     print(obj.mathProblem(num = 21))
     print(obj.mathProblem(num = 101))
     print(obj.mathProblem(num = 100000000))
+    print(obj.mathProblem(num = 2101010101010010010100101010))
 
 
 
