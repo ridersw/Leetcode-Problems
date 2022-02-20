@@ -13,6 +13,8 @@ if __name__ == "__main__":
     obj = Solution()
 
     print(obj.mathProblem(num = 3))
+    print(obj.mathProblem(num = 21))
+
 
 
 # World's Toughest Problem also known as Collatz conjecture
