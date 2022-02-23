@@ -19,6 +19,17 @@ class Solution:
                     t[pointer1] + s[pointer1+1:] == t[pointer1:]])
 
 
+
+
+if __name__ == "__main__":
+    obj = Solution()
+
+    s = "ab"
+    t = "acb"
+
+    print(obj.isOneDistanceApart(s, t))
+
+
 # Given two strings s and t, return true if they are both one edit distance apart, otherwise return false.
 
 # A string s is said to be one distance apart from a string t if you can:
@@ -39,13 +50,3 @@ class Solution:
 # Output: false
 # Explanation: We cannot get t from s by only one step.
         
-
-
-
-if __name__ == "__main__":
-    obj = Solution()
-
-    s = "ab"
-    t = "acb"
-
-    print(obj.isOneDistanceApart(s, t))
