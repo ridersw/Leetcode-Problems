@@ -23,6 +23,7 @@ if __name__ == "__main__":
     print(obj.removeKdigits(num = "10200", k = 1))
     print(obj.removeKdigits(num = "10", k = 2))
     print(obj.removeKdigits(num = "112", k = 1))
+    print(obj.removeKdigits(num = "0", k = 5))
 
 # Given string num representing a non-negative integer num, and an integer k, return the smallest possible integer after removing k digits from num.
 
