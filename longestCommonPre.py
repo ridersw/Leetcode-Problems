@@ -37,7 +37,6 @@ if __name__ == "__main__":
 # Input: strs = ["dog","racecar","car"]
 # Output: ""
 # Explanation: There is no common prefix among the input strings.
- 
 
 # Constraints:
 
