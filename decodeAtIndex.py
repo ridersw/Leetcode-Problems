@@ -43,8 +43,6 @@ class Solution:
 # If the character read is a digit d, the entire current tape is repeatedly written d - 1 more times in total.
 # Given an integer k, return the kth letter (1-indexed) in the decoded string.
 
- 
-
 # Example 1:
 
 # Input: s = "leet2code3", k = 10
