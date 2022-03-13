@@ -41,7 +41,6 @@ if __name__ == "__main__":
 # Open brackets must be closed by the same type of brackets.
 # Open brackets must be closed in the correct order.
  
-
 # Example 1:
 
 # Input: s = "()"
