@@ -34,7 +34,6 @@ if __name__ == "__main__":
 # The path only contains the directories on the path from the root directory to the target file or directory (i.e., no period '.' or double period '..')
 # Return the simplified canonical path.
 
- 
 
 # Example 1:
 
