@@ -29,7 +29,6 @@ class Solution:
 # Input: words = ["a","b","c"], pattern = "a"
 # Output: ["a","b","c"]
  
-
 # Constraints:
 
 # 1 <= pattern.length <= 20
