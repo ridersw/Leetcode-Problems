@@ -23,8 +23,6 @@ class Solution:
                 #else:
         return res
 
-
-
 if __name__ == "__main__":
     obj = Solution()
 
