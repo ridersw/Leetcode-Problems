@@ -60,7 +60,6 @@ if __name__ == "__main__":
 # Explanation: 
 # In this case, it is not possible to rotate the dominoes to make one row of values equal.
  
-
 # Constraints:
 
 # 2 <= tops.length <= 2 * 104
