@@ -45,7 +45,6 @@ if __name__ == "__main__":
 
 # Example 1:
 
-
 # Input: tops = [2,1,2,4,2,2], bottoms = [5,2,6,2,3,2]
 # Output: 2
 # Explanation: 
