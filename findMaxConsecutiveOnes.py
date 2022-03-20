@@ -36,17 +36,26 @@ class Solution:
 
         zero_index.append(ln)
         n = len(zero_index)
+        print(f'zero_index: {zero_index}')
         res=  0
+
+        #cprint(f'zero_index: {zero_index}')
+
         for swi in range(n-1):
             res = max(res, (zero_index[swi+1] - zero_index[swi]) + (zero_index[swi] - zero_index[swi-1]) - 1)
 
         return res
-        #return max((zero_index[k+1] - zero_index[k]) + (zero_index[k] - zero_index[k-1]) - 1 for k in range(n-1))
 
 if __name__ == "__main__":
     obj = Solution()
-    print(obj.findMaxConsecutiveOnes(nums = [1,0,1,1,0]))
+    #print(obj.findMaxConsecutiveOnes(nums = [1,0,1,1,0]))
+    print(obj.findMaxConsecutiveOnes(nums = [1,0,1,1,0,1,1,1,0,1]))
+
     #print(obj.findMaxConsecutiveOnes(nums = [1,0,1,1,0,1]))
+
+# [0, 1, 4, 8, 10]
+
+#
 
 # Given a binary array nums, return the maximum number of consecutive 1's in the array if you can flip at most one 0.
 
@@ -68,3 +77,5 @@ if __name__ == "__main__":
  
 
 # Follow up: What if the input numbers come in one by one as an infinite stream? In other words, you can't store all numbers coming from the stream as it's too large to hold in memory. Could you solve it efficiently?
+
+
