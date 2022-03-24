@@ -24,7 +24,6 @@ if __name__ == "__main__":
 # subtract 1 from the number on display.
 # Given two integers startValue and target, return the minimum number of operations needed to display target on the calculator.
 
-
 # Example 1:
 
 # Input: startValue = 2, target = 3
