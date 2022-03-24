@@ -40,8 +40,6 @@ if __name__ == "__main__":
 # Output: 3
 # Explanation: Use double, decrement and double {3 -> 6 -> 5 -> 10}.
  
-
 # Constraints:
 
-# 1 <= x, y <= 109
-        
+# 1 <= x, y <= 109       
