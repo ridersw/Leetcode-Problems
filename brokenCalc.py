@@ -42,6 +42,4 @@ if __name__ == "__main__":
  
 # Constraints:
 
-# 1 <= x, y <= 109
-# 
-       
+# 1 <= x, y <= 109       
