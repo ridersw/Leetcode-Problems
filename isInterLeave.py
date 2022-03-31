@@ -20,5 +20,3 @@ if __name__ == "__main__":
     obj = Solution()
 
     print(obj.isInterleave(s1 = "aabcc", s2 = "dbbca", s3 = "aadbbcbcac"))
-
-    
