@@ -65,7 +65,9 @@ k = 2))
 #  [1,0,0,0],
 #  [1,0,0,0]], 
 # k = 2
+
 # Output: [0,2]
+
 # Explanation: 
 # The number of soldiers in each row is: 
 # - Row 0: 1 
