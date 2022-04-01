@@ -74,8 +74,7 @@ k = 2))
 # - Row 1: 4 
 # - Row 2: 1 
 # - Row 3: 1 
-# The rows ordered from weakest to strongest are [0,2,3,1].
- 
+# The rows ordered from weakest to strongest are [0,2,3,1]. 
 
 # Constraints:
 
