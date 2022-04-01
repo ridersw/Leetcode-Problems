@@ -56,6 +56,7 @@ k = 2))
 # - Row 3: 2 
 # - Row 4: 5 
 # The rows ordered from weakest to strongest are [2,0,3,1,4].
+
 # Example 2:
 
 # Input: mat = 
