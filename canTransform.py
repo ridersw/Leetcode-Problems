@@ -32,6 +32,7 @@ if __name__ == "__main__":
 
 # Example 1:
 
+
 # Input: start = "RXXLRXRXL", end = "XRLXXRRLX"
 # Output: true
 # Explanation: We can transform start to end following these steps:
