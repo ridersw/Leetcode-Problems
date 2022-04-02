@@ -45,7 +45,6 @@ if __name__ == "__main__":
 # Input: start = "X", end = "L"
 # Output: false
  
-
 # Constraints:
 
 # 1 <= start.length <= 104
