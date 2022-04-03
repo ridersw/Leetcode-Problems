@@ -1,0 +1,24 @@
+.csuebImg {
+  background-image: url(wallpaper.webp);
+  background-size: cover;
+}
+.csuebImg:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgb(128, 0, 0, 0.5);
+}
+
+#text {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  left: 150px;
+  top: 350px;
+}

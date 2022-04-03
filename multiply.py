@@ -31,7 +31,6 @@ if __name__ == "__main__":
 # Input: mat1 = [[0]], mat2 = [[0]]
 # Output: [[0]]
  
-
 # Constraints:
 
 # m == mat1.length
