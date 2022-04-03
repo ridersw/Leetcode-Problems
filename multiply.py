@@ -30,7 +30,6 @@ if __name__ == "__main__":
 # Output: [[0]]
  
 # Constraints:
-
 # m == mat1.length
 # k == mat1[i].length == mat2.length
 # n == mat2[i].length
