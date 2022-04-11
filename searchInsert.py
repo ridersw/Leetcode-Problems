@@ -33,7 +33,6 @@ class Solution:
 # Output: 4
  
 # Constraints:
-
 # 1 <= nums.length <= 104
 # -104 <= nums[i] <= 104
 # nums contains distinct values sorted in ascending order.
