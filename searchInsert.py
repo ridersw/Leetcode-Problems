@@ -32,7 +32,6 @@ class Solution:
 # Input: nums = [1,3,5,6], target = 7
 # Output: 4
  
-
 # Constraints:
 
 # 1 <= nums.length <= 104
