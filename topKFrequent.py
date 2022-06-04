@@ -39,7 +39,6 @@ if __name__ == "__main__":
 # Input: nums = [1], k = 1
 # Output: [1]
  
-
 # Constraints:
 
 # 1 <= nums.length <= 105
