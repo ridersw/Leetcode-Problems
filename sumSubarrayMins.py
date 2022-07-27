@@ -48,6 +48,5 @@ if __name__ == "__main__":
 # Output: 444
  
 # Constraints:
-
 # 1 <= arr.length <= 3 * 104
 # 1 <= arr[i] <= 3 * 104
