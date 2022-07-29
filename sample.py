@@ -80,15 +80,8 @@ class Solution:
 
 if __name__ == "__main__":
     obj = Solution()
-
-    
-
-    # print(obj.problem(inputString = '200 + ((-100500 + 10000) + 2000)') == '-88300')
-    # print(obj.problem(inputString = '-200 + ((-100500 + 10000) + 2000)') == '-88700')
-    # print(obj.problem(inputString = '200 + ((-100_500 + 100_00) + 20_00)') == '-88300')
-    # print(obj.problem(inputString = '200 + ((-100_500 + 100_00) + 20_00 + )'))
-    # print(obj.problem(inputString = '- 200 + ((-100_500 + 100_00) + 20_00)') == '-88700')
-
-    str = '4+5+6-3-1'
-    str = list(str)
-
+    print(obj.problem(inputString = '200 + ((-100500 + 10000) + 2000)') == '-88300')
+    print(obj.problem(inputString = '-200 + ((-100500 + 10000) + 2000)') == '-88700')
+    print(obj.problem(inputString = '200 + ((-100_500 + 100_00) + 20_00)') == '-88300')
+    print(obj.problem(inputString = '200 + ((-100_500 + 100_00) + 20_00 + )'))
+    print(obj.problem(inputString = '- 200 + ((-100_500 + 100_00) + 20_00)') == '-88700')
