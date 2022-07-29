@@ -57,7 +57,6 @@ if __name__ == "__main__":
 # Input: words = ["a","b","c"], pattern = "a"
 # Output: ["a","b","c"]
  
-
 # Constraints:
 
 # 1 <= pattern.length <= 20
