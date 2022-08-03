@@ -1,14 +1,23 @@
+# problem
+# Solution
+#step 1
+#step2
+
+
 from typing import final
 
 
 class Solution:
     def problem(self, inputString):
+
+        #creating arrays for simpler
         skip = ['(',')',' ']
         operator = ['-', '+']
         ignore = ['_']
         finalString = []
         temp = ""
 
+        #to remove redundant parameter like " ", "(", ")"
         for item in inputString:
             if item in skip:
                 if temp:
