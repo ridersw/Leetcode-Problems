@@ -27,8 +27,6 @@ if __name__ == "__main__":
 
 # A subarray is a contiguous non-empty sequence of elements within an array.
 
- 
-
 # Example 1:
 
 # Input: nums = [1,2,3]
