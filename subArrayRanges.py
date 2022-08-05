@@ -56,7 +56,6 @@ if __name__ == "__main__":
 # Input: nums = [4,-2,-3,4,1]
 # Output: 59
 # Explanation: The sum of all subarray ranges of nums is 59.
- 
 
 # Constraints:
 
