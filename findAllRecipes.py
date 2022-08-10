@@ -3,7 +3,9 @@ class Solution:
         result = []
         
         for swi in range(len(recipes)):
-            print(f'Recipe: {recipes[swi]} needs Ingredients: {ingredients[swi]} Are Ingredients in Supplies: {ingredients[swi] in supplies}')
+            print(f'for recipe: {recipes[swi]}')
+            
+
 
 if __name__ == "__main__":
     obj = Solution()

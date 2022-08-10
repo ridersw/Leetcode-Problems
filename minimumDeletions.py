@@ -28,7 +28,7 @@ if __name__ == "__main__":
 
 # Input: s = "aababbab"
 # Output: 2
-# Explanation: You can either:
+# Explanation: You can either:m
 # Delete the characters at 0-indexed positions 2 and 6 ("aababbab" -> "aaabbb"), or
 # Delete the characters at 0-indexed positions 3 and 6 ("aababbab" -> "aabbbb").
 # Example 2:
