@@ -41,7 +41,7 @@ class Solution:
 # Example 2:
 
 # Input: n = 1, bad = 1
-# Output: 1
+# Output: 1ß
  
 
 # Constraints:
