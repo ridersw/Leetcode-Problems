@@ -1,5 +1,5 @@
 class Solution:
-    def longestConsecutive(self, nums: List[int]) -> int:
+    def l(self, nums: List[int]) -> int:
         
         if not nums:
             return 0
@@ -40,3 +40,5 @@ class Solution:
 
 # 0 <= nums.length <= 105
 # -109 <= nums[i] <= 109
+
+
