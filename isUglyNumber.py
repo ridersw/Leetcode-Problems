@@ -19,8 +19,6 @@ class Solution:
 
 # Given an integer n, return true if n is an ugly number.
 
- 
-
 # Example 1:
 
 # Input: n = 6
