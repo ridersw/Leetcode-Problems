@@ -6,7 +6,7 @@ class Solution:
         count = 0
         s = list(s)
 
-        for swi in range(len(t)-2):
+        for swi in range(len(t)-4):
             if t[swi] == s[0] and t[swi+2] == s[1] and t[swi+4] == s[2]:
                 count += 1
 
