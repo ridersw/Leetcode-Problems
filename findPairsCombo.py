@@ -1,7 +1,6 @@
 class ArrayOfIntegers:
     def findPairs(self, array):
         count = 0
-
         dict = {}
         
         for swi in range(len(array)):
@@ -16,7 +15,6 @@ class ArrayOfIntegers:
             if len(values) < 2:
                 continue
             else:
-                print(f'values: {values}')
                 for swi in range(len(values)-1):
                     for swj in range(swi+1, len(values)):
                         diff = 0
@@ -34,7 +32,6 @@ class ArrayOfIntegers:
                                 break
 
                         if diff < 2:
-                            print(f'Found Combo: {num1} and {num2}')
                             count += 1
 
         return count
