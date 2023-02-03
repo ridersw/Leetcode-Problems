@@ -1,32 +1,27 @@
+from collections import defaultdict
+
+
 class Solution:
+
     def __init__(self, capacity: int):
         self.capacity = capacity
-        self.data = []
-        self.keys = []
+        self.data = {}
 
     def get(self, key: int) -> int:
-        if key in self.keys:
-            for d in self.data:
-                if d[0] == key:
-                    temp = d
-                    self.data.remove(temp)
-                    self.data.append(temp)
-                    break
-        return -1
+        if key not in self.data:
+            return -1
+
+        value = self.data.pop(key)
+        self.data[key] = value
+        return value
 
     def put(self, key: int, value: int) -> None:
-        if key in self.keys:
-            for d in self.data:
-                if d[0] == key:
-                    temp = d
-                    self.data.remove(temp)
-                    self.data.append(temp)
-                    break
+        if key in self.data:
+            self.data.pop(key)
         else:
-            if self.capacity == len(self.data):
-                self.data = self.data[1:]
-            self.data.append([key, value])
-
+            if len(self.data) == self.capacity:
+                del self.data[next(iter(self.data))]
+        self.data[key] = value
 
 if __name__ == "__main__":
     lfu = Solution()
