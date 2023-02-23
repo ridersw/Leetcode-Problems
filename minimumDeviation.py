@@ -1,31 +1,63 @@
+import math
+from heapq import heappop, heappush
+
 class Solution:
     def minimumDeviation(self, nums) -> int:
 
-        if nums == [3, 5]:
-            return 1
+        # if nums == [3, 5]:
+        #     return 1
 
-        avg = sum(nums) / len(nums)
-        deviation = max(nums) - min(nums)
-        # print(f'Array Received: {nums} avg: {avg} deviation: {deviation}')
+        # avg = sum(nums) / len(nums)
+        # deviation = max(nums) - min(nums)
+        # # print(f'Array Received: {nums} avg: {avg} deviation: {deviation}')
         
-        for swi in range(len(nums)):
-            if nums[swi] % 2 == 0:
-                #even
-                # print(f'Found Even- {nums[swi]}')
-                # print(f'abs(avg - (nums[swi]) // 2): {abs(avg - (nums[swi]) // 2)}')
-                # print(f'abs(avg - (nums[swi]): {abs(avg - nums[swi])}')
-                if abs(avg - (nums[swi]) // 2) <= abs(avg - (nums[swi])):
-                    nums[swi] = int(nums[swi] // 2)
-            else:
-                #odd
-                if abs(avg - (nums[swi]) * 2) <= abs(avg - (nums[swi])):
-                    nums[swi] = int(nums[swi] * 2)
+        # for swi in range(len(nums)):
+        #     if nums[swi] % 2 == 0:
+        #         #even
+        #         # print(f'Found Even- {nums[swi]}')
+        #         # print(f'abs(avg - (nums[swi]) // 2): {abs(avg - (nums[swi]) // 2)}')
+        #         # print(f'abs(avg - (nums[swi]): {abs(avg - nums[swi])}')
+        #         if abs(avg - (nums[swi]) // 2) <= abs(avg - (nums[swi])):
+        #             nums[swi] = int(nums[swi] // 2)
+        #     else:
+        #         #odd
+        #         if abs(avg - (nums[swi]) * 2) <= abs(avg - (nums[swi])):
+        #             nums[swi] = int(nums[swi] * 2)
 
-        newDeviation = max(nums) - min(nums)
-        # print(f'Modified Array: {nums} newDeviation: {newDeviation}')
-        if newDeviation < deviation:
-            deviation = self.minimumDeviation(nums)
-        return deviation
+        # newDeviation = max(nums) - min(nums)
+        # # print(f'Modified Array: {nums} newDeviation: {newDeviation}')
+        # if newDeviation < deviation:
+        #     deviation = self.minimumDeviation(nums)
+        # return deviation
+
+        evens = []
+        minimum = math.inf
+        
+        for num in nums:
+            if num % 2 == 0:
+                evens.append(-num)
+                minimum = min(minimum, num)
+            else:
+                evens.append(-num * 2)
+                minimum = min(minimum, num*2)
+                
+        heapq.heapify(evens)
+        
+        # print(f'evens: {evens}')
+        
+        min_deviation = math.inf
+        
+        while evens:
+            current_value = -heapq.heappop(evens)
+            min_deviation = min(min_deviation, current_value - minimum)
+            
+            if current_value % 2 == 0:
+                minimum = min(current_value // 2, minimum)
+                heapq.heappush(evens, -current_value // 2)
+            else:
+                break
+                
+        return min_deviation
 
 
 if __name__ == "__main__":
