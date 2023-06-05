@@ -7,7 +7,7 @@ api_key = "81a92e33853cee3579c39858c4a07aa1"
 
 # base_url 
 base_url = "http://api.openweathermap.org/data/2.5/weather?" #for 1 day
-base_url = "http://api.openweathermap.org/data/2.5/forecast?zip=94542,us" #for 5 day forcast
+# base_url = "http://api.openweathermap.org/data/2.5/forecast?zip=94542,us" #for 5 day forcast
 # api.openweathermap.org/data/2.5/forecast?zip=94040,us&appid={API key}
 # api.openweathermap.org/data/2.5/forecast?lat={37.6688}&lon={122.0810}&appid={API key}
 
@@ -27,11 +27,11 @@ x = response.json()
 
 #for 1 day
 # print(datetime.fromtimestamp(x['dt']).strftime('%d-%m-%y'))
-# print(x['weather'])
+print(x)
 
 
 #for forcast
-print(x['list'])
+# print(x['list'])
 # if x["cod"] != "404":
  
 #     # store the value of "main"

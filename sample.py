@@ -1,96 +1,56 @@
-# problem
-# Solution
-#step 1
-#step2
+import requests
 
+url = "<login url>"
+base_url = "<base url>"
+session_id = "<session id>"
 
-from typing import final
+headers = {
+    "Host": base_url,
+    "Connection": "keep-alive",
+    "Content-Length": "1611",
+    "sec-ch-ua": "\"Chronium\";v=\"112\",\"Google Chrome\";v=\"112\",\"Not:A-Brand\";v=\"9g\"",
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+    "X-Requested-With": "XMLHttpRequest",
+    "sec-ch-ua-mobile": "",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "Origin": base_url,
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Dest": "empty",
+    "Referer": f"{base_url}/DentalstudiosF/",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept-Language": "en-US, en: g=0.9",
+    "Cookie": f"JSESSIONID={session_id}"
+}
 
+data = {
+    "userName": "user name",
+    "password": "password",
+    "customerId": "cust id",
+    "practice": {
+        "id": 1,
+        "name": "practice name",
+        "name2": "practice name?",
+        "address": "address",
+        "zipCode": {
+            "id": "<zipcor",
+            "state": "«state›",
+            "city": "«city›",
+            "zipClass": "STANDARD",
+            "zipCode": "<zipcode 2›",
+            "updaterime": "<update time›",
+            "createTime": "<create time›"
+        },
+        "phone": "phone number",
+        "fax": "‹fax>"
+    }
+}
 
-class Solution:
-    def problem(self, inputString):
+response = requests.post(url, json=data, headers=headers)
 
-        #creating arrays for simpler
-        skip = ['(',')',' ']
-        operator = ['-', '+']
-        ignore = ['_']
-        finalString = []
-        temp = ""
-
-        #to remove redundant parameter like " ", "(", ")"
-        for item in inputString:
-            if item in skip:
-                if temp:
-                    finalString.append(temp)
-                temp = ""
-            elif item in operator:
-                if temp:
-                    finalString.append(temp)
-                finalString.append(item)
-                temp = ""
-            else:
-                temp += item
-
-        if temp:
-            finalString.append(temp)
-
-        # print(f'finalString: {finalString}')
-
-        if finalString[-1] == '+' or finalString[-1] == '-1':
-            return "Invalid String"
-
-        for swi in range(1, len(finalString)):
-            if finalString[swi] in operator and finalString[swi-1] in operator:
-                if finalString[swi] == '-' and finalString[swi-1] == '-':
-                    finalString[swi-1] = '+'
-                    finalString[swi] = ''
-                elif finalString[swi] == '-' and finalString[swi-1] == '+':
-                    finalString[swi-1] = '-'
-                    finalString[swi] = ''
-                elif finalString[swi] == '+' and finalString[swi-1] == '+':
-                    finalString[swi-1] = '+'
-                    finalString[swi] = ''
-                else:
-                    finalString[swi-1] = '-'
-                    finalString[swi] = ''
-
-        # print(f'finalString: {finalString}')
-
-        for item in finalString:
-            if item == "":
-                finalString.remove(item)
-
-        # print(f'finalString: {finalString}')
-
-        if finalString[0] == '-':
-            finalString = finalString[1:]
-            finalString[0] = str(-int(finalString[0]))
-            # print(f'finalString Line : {finalString}')
-        elif finalString[0] == '+':
-            finalString = finalString[1:]
-            # print(f'finalString: {finalString}')
-
-        if finalString[-1] == '+' or finalString[-1] == '-':
-            return "Invalid String"
-
-
-        ans = int(finalString[0])
-
-        for swi in range(1,len(finalString), 2):
-            if finalString[swi] == '+':
-                ans += int(finalString[swi+1])
-            else:
-                ans -= int(finalString[swi+1])
-
-        # print(f'ans: {ans}')
-
-        return str(ans)
-
-
-if __name__ == "__main__":
-    obj = Solution()
-    print(obj.problem(inputString = '200 + ((-100500 + 10000) + 2000)') == '-88300')
-    print(obj.problem(inputString = '-200 + ((-100500 + 10000) + 2000)') == '-88700')
-    print(obj.problem(inputString = '200 + ((-100_500 + 100_00) + 20_00)') == '-88300')
-    print(obj.problem(inputString = '200 + ((-100_500 + 100_00) + 20_00 + )'))
-    print(obj.problem(inputString = '- 200 + ((-100_500 + 100_00) + 20_00)') == '-88700')
+if response.ok:
+    print(response.text)
+else:
+    print(f"Error: {response.status_code}")
