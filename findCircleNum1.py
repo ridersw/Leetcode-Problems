@@ -18,7 +18,6 @@ class Solution:
         return numberOfProvinces
 
 
-
 if __name__ == "__main__":
     obj = Solution()
     print(obj.findCircleNum(isConnected = [[1,1,0],[1,1,0],[0,0,1]]))
