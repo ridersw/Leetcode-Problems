@@ -3,6 +3,7 @@ class Solution:
         a = list(str(bin(a)[2:]))
         b = list(str(bin(b)[2:]))
         c = list(str(bin(c)[2:]))
+        
         maxLen = max(len(a), len(b), len(c))
 
         tempLen = maxLen - len(a)
