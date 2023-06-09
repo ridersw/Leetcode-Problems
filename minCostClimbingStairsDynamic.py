@@ -15,8 +15,6 @@ class Solution:
 
 # Return the minimum cost to reach the top of the floor.
 
- 
-
 # Example 1:
 
 # Input: cost = [10,15,20]
