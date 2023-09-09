@@ -1,8 +1,8 @@
 class Solution:
     def hammingWeight(self, n: int) -> int:
-        return str(bin(n)).count('1')
-
-# Write a function that takes an unsigned integer and returns the number of '1' bits it has (also known as the Hamming weight).
+        return bin(n).count('1')
+    
+# Write a function that takes the binary representation of an unsigned integer and returns the number of '1' bits it has (also known as the Hamming weight).
 
 # Note:
 
@@ -30,6 +30,3 @@ class Solution:
 # Constraints:
 
 # The input must be a binary string of length 32.
- 
-
-# Follow up: If this function is called many times, how would you optimize it?
