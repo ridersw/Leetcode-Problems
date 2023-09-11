@@ -10,7 +10,6 @@ class Solution:
 
 # You must implement a solution with a linear runtime complexity and use only constant extra space.
 
- 
 
 # Example 1:
 
