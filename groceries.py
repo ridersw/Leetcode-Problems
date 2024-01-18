@@ -1,4 +1,10 @@
 def buyItems():
     pass
 
-[Blueberries, carrotsm coffeem milk, flour, cheese]
+
+items = ["Blueberries", "carrots", "coffee", "milk", "flour", "cheese"]
+products = [
+    ["cheese", "Dairy"],
+    ["Carrots", "Produce"],
+    ["Potatoes",""]
+]
