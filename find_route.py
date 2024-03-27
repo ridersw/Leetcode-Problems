@@ -31,6 +31,7 @@ def find_route(total_miles, chargers):
         print(f'route: {route}')
         temp = 0
         for i in range(current_index, len(chargers)):
+            print()
             if current_position + 300 <= chargers[i]:
                 print(f'Found Charger: {chargers[i]}')
                 pass
