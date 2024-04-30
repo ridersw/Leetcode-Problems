@@ -4,9 +4,9 @@ class Solution:
     def pourWater(self, heights, volume, k):
 
         heights = [math.inf] + heights + [math.inf]
-
+        print(heights[1:-1])    
         while volume > 0:
-            print(heights[1:-1])
+            
             if heights[k] < heights[k-1] and heights[k] < heights[k+1]:
                 heights[k] += 1
 
