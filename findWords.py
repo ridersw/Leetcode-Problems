@@ -1,22 +1,52 @@
 class Solution:
-    def findWords(self, board, words):
-        temp = {}
+    def findWords(self, words: List[str]) -> List[str]:
+        row1 = ('Q','W','E','R','T','Y','U','I','O','P')
+        row2 = ('A','S','D','F','G','H','J','K','L')
+        row3 = ('Z','X','C','V','B','N','M')
+        answer = []
         for word in words:
-            temp[word[0]] = []
-            for swi in range(len(board[0])):
-                if word[0] in board[swi]:
-                    index_ref = board[swi].index(word[0])
-                    temp[word[0]].append([swi, index_ref])
+            tempWord = list(word)
+            tempArr = []
 
-        return temp
+            for w in tempWord:
+                if w.upper() in row1:
+                    tempArr.append('r1')
+                elif w.upper() in row2:
+                    tempArr.append('r2')
+                else:
+                    tempArr.append('r3')
 
+            if len(set(tempArr)) == 1:
+                answer.append(word)
 
+        return answer
+        
+# Given an array of strings words, return the words that can be typed using letters of the alphabet on only one row of American keyboard like the image below.
 
+# In the American keyboard:
 
-if __name__ == "__main__":
-    obj = Solution()
+# the first row consists of the characters "qwertyuiop",
+# the second row consists of the characters "asdfghjkl", and
+# the third row consists of the characters "zxcvbnm".
 
-    board = [["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]]
-    words = ["oath","pea","eat","rain"]
+ 
 
-    print(obj.findWords(board, words))
+# Example 1:
+
+# Input: words = ["Hello","Alaska","Dad","Peace"]
+# Output: ["Alaska","Dad"]
+# Example 2:
+
+# Input: words = ["omk"]
+# Output: []
+# Example 3:
+
+# Input: words = ["adsdf","sfd"]
+# Output: ["adsdf","sfd"]
+ 
+
+# Constraints:
+
+# 1 <= words.length <= 20
+# 1 <= words[i].length <= 100
+# words[i] consists of English letters (both lowercase and uppercase). 
