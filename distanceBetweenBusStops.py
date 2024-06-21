@@ -13,9 +13,6 @@ class Solution:
 # The bus goes along both directions i.e. clockwise and counterclockwise.
 
 # Return the shortest distance between the given start and destination stops.
-
- 
-
 # Example 1:
 
 
